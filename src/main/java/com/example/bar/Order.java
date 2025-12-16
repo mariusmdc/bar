@@ -1,12 +1,14 @@
 package com.example.bar;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Order {
-    private ArrayList <Cocktail> cocktails = new ArrayList<>();
+
+    private List<Cocktail> cocktails = new ArrayList<>();
     private double bill;
     private Client client;
-    private double happyHourReduc = 0.2;
+    private double happyHourReduc = 0.0;
 
     public Order (Client client){
         this.client = client;
@@ -34,7 +36,7 @@ public class Order {
         return bill;
     }
 
-    public ArrayList<Cocktail> getCocktails() {
+    public List<Cocktail> getCocktails() {
         return cocktails;
     }
 

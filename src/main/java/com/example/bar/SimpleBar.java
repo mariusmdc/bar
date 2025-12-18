@@ -37,7 +37,6 @@ public class SimpleBar implements Bar {
     @Override
     public void prepareOrder(Order order, Barman barman) {
         barman.prepareCocktail(order);
-        // ici tu pourras changer statut commande + client si le sujet le demande
     }
 
     @Override
@@ -61,7 +60,6 @@ public class SimpleBar implements Bar {
         }
     }
 
-    // utile pour l'interface JavaFX : liste des cocktails disponibles au bar
     public void addCocktailToMenu(Cocktail cocktail) {
         cocktails.add(cocktail);
     }
